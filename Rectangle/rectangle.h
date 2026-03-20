@@ -13,6 +13,6 @@ Fraction minus(Fraction f1, Fraction f2);
 Fraction multi(Fraction f1, Fraction f2);
 Fraction divide(Fraction f1, Fraction f2);
 Fraction strFrac(char* str);
-void printFrac(Fraction f, int isDec);
+void printFrac(Fraction f);
 
 #endif

@@ -93,11 +93,8 @@ Fraction strFrac(char* str) {
     return sim(f);
 }
 
-void printFrac(Fraction f, int isDec) {
-    if (isDec == 1) {
-        printf("%g", (double)f.num / f.den);
-    }
-    else if (f.den == 1) {
+void printFrac(Fraction f) {
+    if (f.den == 1) {
 
         printf("%d", f.num);
     }

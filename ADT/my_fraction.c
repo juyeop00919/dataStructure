@@ -16,6 +16,7 @@ int get_gcd(int a, int b) {
     return a;
 }
 
+// 기약분수 변환
 Fraction sim(Fraction f) {
     if (f.den == 0) {
         printf("분모는 0이 될 수 없습니다.\n");
@@ -24,7 +25,7 @@ Fraction sim(Fraction f) {
     int common = get_gcd(f.num, f.den);
     f.num /= common;
     f.den /= common;
-    
+
     if (f.den < 0) {
         f.num = -f.num;
         f.den = -f.den;

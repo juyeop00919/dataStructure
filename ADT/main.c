@@ -6,7 +6,7 @@ int main() {
     char s1[100], op, s2[100];
 
     if (scanf("%99s %c %99s", s1, &op, s2) != 3) {
-        printf("입력형식이 맞지않습니다.\n");
+        printf("Wrong Input.\n");
         return 1;
     }
 
@@ -20,7 +20,7 @@ int main() {
         case '*': result = multi(f1, f2); break;
         case '/': result = divide(f1, f2); break;
         default:
-            printf("연산자가 잘못되었습니다..\n");
+            printf("Wrong Input Type.\n");
             return 1;
     }
 

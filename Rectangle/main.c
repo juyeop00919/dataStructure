@@ -8,10 +8,6 @@ int main(int c, char** v) {
         return 1;
     }
 
-    int isDec = 0;
-    if (strchr(v[1], '.') != NULL || strchr(v[2], '.') != NULL) {
-        isDec = 1; 
-    }
 
     Fraction width = strFrac(v[1]);
     Fraction height = strFrac(v[2]);
@@ -26,10 +22,10 @@ int main(int c, char** v) {
     Fraction area = multi(width, height);
 
     printf("Perimeter: ");
-    printFrac(perimeter, isDec);
+    printFrac(perimeter);
 
     printf(", Area: ");
-    printFrac(area, isDec);
+    printFrac(area);
 
     printf("\n");
 
