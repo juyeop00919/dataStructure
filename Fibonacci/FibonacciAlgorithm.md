@@ -1,17 +1,5 @@
 # 과제2 : 피보나치 복잡도 프로파일링 보고서
 
-## 이전 과제 코드
-GCD,LCM
-
-#main.c
-https://github.com/juyeop00919/dataStructure/blob/main/GCDLCM/main.c
-
-#my_math.c
-https://github.com/juyeop00919/dataStructure/blob/main/GCDLCM/my_math.c
-
-#my_math.h
-https://github.com/juyeop00919/dataStructure/blob/main/GCDLCM/my_math.h
-
 ## 2번 과제 코드
 
 #main.c
