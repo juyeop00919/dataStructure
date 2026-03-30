@@ -3,30 +3,38 @@
 #include "fibonacci.h"
 
 int main(void) {
+    printf("----n----/--fibo--/---gcd---\n");
+    for (int n = 5; n <= 93; n++) {
 
-    for (int n = 1; n <= 93; n++) {
-        unsigned long long fn = fibonacci(n);
-        unsigned long long fn_prev = fibonacci(n - 1);
+        clock_t sfibo = clock();
+
+        unsigned long long fn = fib(n);
+        unsigned long long fn_prev = fib(n - 1);
         unsigned long long gcd;
 
-        clock_t start = clock();
+        clock_t efibo = clock();
 
-        gcd = get_gcd(fn, fn_prev);
+		clock_t sgcd = clock();
 
-        // 너무 빨리 끝나는 나머지 반복 부하 
-         for (int i = 0; i < 1000000; i++)
-         {
-             gcd = get_gcd(fn, fn_prev);
-         }
+		//GCD 계산을 100만번 수행하여 시간 측정
+        for (int i = 0; i < 1000000; i++)
+        {
+            gcd = get_gcd(fn, fn_prev);
+        }
 
+		clock_t egcd = clock();
 
-        clock_t end = clock();
+        //피보나치수열의 시간계산
+        double ftime = (double)(efibo - sfibo) / CLOCKS_PER_SEC;
 
+        //GCD계산의 시간계산
+        double gtime = (double)(egcd - sgcd) / CLOCKS_PER_SEC;
+       
 
-        double time = (double)(end - start) / CLOCKS_PER_SEC;
-        printf("%d\t%.3f\n", n, time*1000);
+        printf("%d\t%.3f\t", n, ftime*1000);
+        printf("%.3f\n", gtime * 1000);
 
-        //printf(" now Fibonacci (%d) : %llu / GCD : %llu / time: %f ms \n", n, fn, gcd, time*1000);
+        //printf(" now Fibonacci (%d) : %llu    /      time: %.3f ms      / GCD : %llu \n", n, fn, time * 1000, gcd);
     }
 
     return 0;
