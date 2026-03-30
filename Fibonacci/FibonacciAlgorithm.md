@@ -12,6 +12,17 @@ https://github.com/juyeop00919/dataStructure/blob/main/GCDLCM/my_math.c
 #my_math.h
 https://github.com/juyeop00919/dataStructure/blob/main/GCDLCM/my_math.h
 
+## 2번 과제 코드
+
+#main.c
+https://github.com/juyeop00919/dataStructure/blob/main/Fibonacci/main.c
+
+#fibonacci.c
+https://github.com/juyeop00919/dataStructure/blob/main/Fibonacci/fibonacci.c
+
+#fibonacci.h
+https://github.com/juyeop00919/dataStructure/blob/main/Fibonacci/fibonacci.h
+
 ## 1. 과제 1 (GCD) 시간복잡도 검증
 
 ### GCD의 시간복잡도
