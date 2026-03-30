@@ -21,6 +21,7 @@ int get_gcd(int a, int b) {
     }
     return a;              // O(1)
 }
+```c
 
 만약 a % b = r 이면, r < b  (나머지는 항상 나누는 수보다 작음)
 다음 단계에서 b % r = r' 이면, r' < r
