@@ -2,7 +2,7 @@
 
 ## 1. GCD 알고리즘 개요
 
-### 1.1 유클리드 호제법 (Euclidean Algorithm)
+### 유클리드 호제법 (Euclidean Algorithm)
 
 유클리드 호제법은  GCD(a, b) = GCD(b, a % b) 를 반복 수행 후 나머지가 0이 되면, 그때의 나누는 수가 GCD입니다.
 
