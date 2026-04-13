@@ -13,13 +13,13 @@
 ### 2.1 재귀적 방법 (Recursive)
 - **방식**: $F(n) = F(n-1) + F(n-2)$ 정의를 그대로 호출하는 방식.
 - **특징**: 코드가 직관적이지만, 동일한 값을 구하기 위해 하위 함수를 중복해서 호출함.
-- **시간 복잡도**: $O(2^n)$ (지수 시간)
+- 
  <img width="1812" height="1051" alt="재귀적방법" src="https://github.com/user-attachments/assets/dc177b63-fffb-4455-af42-4f92dd5651cd" />
  
 ### 2.2 순환적 방법 (Iterative)
 - **방식**: 루프를 사용하여 $F(1)$부터 차례대로 결과를 쌓아 올리는 방식(Bottom-Up).
 - **특징**: 한 번 계산한 값을 변수에 유지하며 전진하므로 중복 연산이 없음.
-- **시간 복잡도**: $O(n)$ (선형 시간)
+- 
 - <img width="1828" height="668" alt="순환적방법" src="https://github.com/user-attachments/assets/8c601a78-2476-429d-b140-b15d865f3c2b" />
 
 ---
