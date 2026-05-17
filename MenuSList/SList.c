@@ -55,25 +55,27 @@ LinkedList* insertAtLinkedList(LinkedList* li, int item, int pos) {
 
 
 LinkedList* deleteAtLinkedList(LinkedList* li, int pos) {
-	if (pos > 0 && pos <= li->size) {
-		PointType* pre = li->head;
-		for (int i = 0; i < pos -1; i++)
-		{
-			pre = pre->next;
-		}
+	int x;
+	if (pos >= 0 && pos <= li->size) {
 		if (pos == 0) {
 			PointType* temp = li->head;
 			li->head = temp->next;
+			x = temp->x;
 			free(temp);
 		}
 		else {
+			PointType* pre = li->head;
+			for (int i = 0; i < pos - 1; i++) {
+				pre = pre->next;
+			}
 			PointType* temp = pre->next;
 			pre->next = temp->next;
+			x = temp->x;
 			free(temp);
 		}
 		li->size--;
 	}
-	printf("Delete %d Node -> ", pos);
+	printf("Delete %d[%d] Node -> ",x, pos);
 	printLinkedList(li);
 	return li;
 }
