@@ -4,6 +4,7 @@
 
 typedef struct pointType {
 	int x;
+	struct pointType* prev;
 	struct pointType* next;
 }PointType;
 
